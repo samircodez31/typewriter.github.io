@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --dark-color: #222326;
+    --muted-color: #7D838C;
+    --light-color: #EFF0F1;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Space Mono', monospace;
+}
+
+body {
+    background-color: var(--dark-color);
+    font-family: var(--primary-font);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--muted-color);
+    border-radius: 5px;
+    border: 3px solid var(--dark-color);
+}
+
+.logo {
+    padding: 2rem 1rem 1rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.logo object {
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: scaleX(-1);
+}
+
+.logo p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    width: 9rem;
+    text-align: left;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+}
+
+.header {      
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+
+.title {    
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 1.33rem;
+}
+
+.verses {
+    font-family: var(--secondary-font);
+    font-size: 1.125rem;
+}
+
+footer, a {
+    color: var(--muted-color);
+    margin-bottom: 2rem;
+}
+
+a {    
+    transition: color ease 200ms;
+}
+
+a:hover {
+    color: var(--light-color);
+}
